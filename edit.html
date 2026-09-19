@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edit Post - Blog CMS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">BlogCMS</a>
+
+            <nav>
+                <a href="index.html" class="nav-link">Posts</a>
+
+                <a href="create.html" class="nav-button">
+                    + Create Post
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="container form-page">
+
+        <div class="page-header">
+
+            <div>
+                <p class="eyebrow">CONTENT MANAGEMENT</p>
+
+                <h1>Edit Post</h1>
+
+                <p class="page-description">
+                    Update your existing blog post.
+                </p>
+            </div>
+
+        </div>
+
+        <form id="editPostForm" class="post-form">
+
+            <div class="form-group">
+
+                <label for="editTitle">Title *</label>
+
+                <input
+                    type="text"
+                    id="editTitle"
+                    required
+                >
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="editContent">Content / Body *</label>
+
+                <textarea
+                    id="editContent"
+                    rows="12"
+                    required
+                ></textarea>
+
+                <div id="editContentCounter" class="counter">
+                    0 words · 0 characters
+                </div>
+
+            </div>
+
+            <div class="two-column">
+
+                <div class="form-group">
+
+                    <label for="editCategory">
+                        Category *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="editCategory"
+                        required
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="editTags">
+                        Tags
+                    </label>
+
+                    <input
+                        type="text"
+                        id="editTags"
+                    >
+
+                    <small>
+                        Separate tags with commas.
+                    </small>
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="editStatus">
+                    Status *
+                </label>
+
+                <select id="editStatus">
+
+                    <option value="draft">
+                        Draft
+                    </option>
+
+                    <option value="published">
+                        Published
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div id="editFormMessage" class="form-message"></div>
+
+            <div class="form-actions">
+
+                <a href="index.html" class="secondary-button">
+                    Cancel
+                </a>
+
+                <button
+                    type="submit"
+                    class="primary-button"
+                >
+                    Save Changes
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

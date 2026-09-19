@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog CMS - Posts</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">BlogCMS</a>
+
+            <nav>
+                <a href="index.html" class="nav-link active">Posts</a>
+                <a href="create.html" class="nav-button">+ Create Post</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+
+        <div class="page-header">
+            <div>
+                <p class="eyebrow">CONTENT MANAGEMENT</p>
+                <h1>All Posts</h1>
+                <p class="page-description">
+                    Create, manage, organize and publish your blog content.
+                </p>
+            </div>
+
+            <a href="create.html" class="primary-button">
+                + Create New Post
+            </a>
+        </div>
+
+        <section class="filters-card">
+
+            <div class="search-wrapper">
+                <label for="searchInput">Search Posts</label>
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search by title, content or tags..."
+                >
+            </div>
+
+            <div class="filter-group">
+
+                <div>
+                    <label for="categoryFilter">Category</label>
+
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="statusFilter">Status</label>
+
+                    <select id="statusFilter">
+                        <option value="all">All Statuses</option>
+                        <option value="published">Published</option>
+                        <option value="draft">Draft</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="postsContainer" class="posts-container">
+            <!-- Posts will be inserted by JavaScript -->
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

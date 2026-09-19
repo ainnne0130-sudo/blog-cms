@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Post - Blog CMS</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">BlogCMS</a>
+
+            <nav>
+                <a href="index.html" class="nav-link">Posts</a>
+                <a href="create.html" class="nav-button active-button">
+                    + Create Post
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="container form-page">
+
+        <div class="page-header">
+            <div>
+                <p class="eyebrow">CONTENT MANAGEMENT</p>
+
+                <h1>Create New Post</h1>
+
+                <p class="page-description">
+                    Create a new blog post and choose whether to save it as a draft or publish it.
+                </p>
+            </div>
+        </div>
+
+        <form id="postForm" class="post-form">
+
+            <div class="form-group">
+                <label for="title">Title *</label>
+
+                <input
+                    type="text"
+                    id="title"
+                    name="title"
+                    placeholder="Enter post title"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="content">Content / Body *</label>
+
+                <textarea
+                    id="content"
+                    name="content"
+                    rows="12"
+                    placeholder="Write your post content here..."
+                    required
+                ></textarea>
+
+                <div id="contentCounter" class="counter">
+                    0 words · 0 characters
+                </div>
+            </div>
+
+            <div class="two-column">
+
+                <div class="form-group">
+                    <label for="category">Category *</label>
+
+                    <input
+                        type="text"
+                        id="category"
+                        name="category"
+                        placeholder="e.g. AI, SEO, Technology"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="tags">Tags</label>
+
+                    <input
+                        type="text"
+                        id="tags"
+                        name="tags"
+                        placeholder="AI, Technology, Business"
+                    >
+
+                    <small>Separate tags with commas.</small>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="status">Status *</label>
+
+                <select id="status" name="status">
+                    <option value="draft">Draft</option>
+                    <option value="published">Published</option>
+                </select>
+            </div>
+
+            <div id="formMessage" class="form-message"></div>
+
+            <div class="form-actions">
+                <a href="index.html" class="secondary-button">
+                    Cancel
+                </a>
+
+                <button type="submit" class="primary-button">
+                    Save Post
+                </button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
