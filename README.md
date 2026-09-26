@@ -44,7 +44,14 @@ The project is designed to understand the basic concepts of content management w
 - Mobile-friendly responsive layout
 
 ---
+## SEO Improvements
 
+Basic SEO improvements were implemented as part of the project optimization:
+
+- Added a clear and descriptive page title
+- Added a meta description to the main posts page
+- Verified the updated HTML on the deployed website
+- Changes were committed and pushed to GitHub
 ## Technologies Used
 
 - HTML
